@@ -20,7 +20,7 @@ content: name, bio, actual writing pieces, email, and social links.
 
 ## 1. Replace the placeholder content
 
-- Swap "Cynthia Reyes" for the real name throughout (`index.html`, `writing.html`,
+- Swap "Cynthia Theresa Doyle" for the real name throughout (`index.html`, `writing.html`,
   `about.html`, `contact.html`, and each file in `writing/`), or leave it if that's
   correct.
 - Replace each `[PLACEHOLDER: ...]` block with real text.
@@ -38,14 +38,12 @@ content: name, bio, actual writing pieces, email, and social links.
 
 ## 3. Point your Namecheap domain at GitHub Pages
 
-Edit the `CNAME` file in this repo and replace `yourdomain.com` with your actual
-domain (e.g. `cynthiawrites.com`), then commit it. GitHub Pages reads this file to
-know which custom domain to serve.
+The `CNAME` file in this repo is already set to `cynthiatheresadoyle.com`.
 
-Then, in **Namecheap → Domain List → Manage → Advanced DNS** for your domain, add
-these records (remove any conflicting default "Parking Page" records first):
+Then, in **Namecheap → Domain List → Manage → Advanced DNS** for `cynthiatheresadoyle.com`,
+add these records (remove any conflicting default "Parking Page" records first):
 
-**If using the root/apex domain (`yourdomain.com`):**
+**For the root/apex domain (`cynthiatheresadoyle.com`):**
 
 | Type  | Host | Value               |
 |-------|------|---------------------|
@@ -54,18 +52,18 @@ these records (remove any conflicting default "Parking Page" records first):
 | A     | @    | 185.199.110.153     |
 | A     | @    | 185.199.111.153     |
 
-**If also using `www.yourdomain.com`:**
+**If also using `www.cynthiatheresadoyle.com`:**
 
-| Type  | Host | Value                        |
-|-------|------|------------------------------|
-| CNAME | www  | `<username>.github.io.`      |
+| Type  | Host | Value                          |
+|-------|------|---------------------------------|
+| CNAME | www  | `connortd7-pixel.github.io.`   |
 
 (You can set up both — the apex with A records, and `www` with a CNAME.)
 
 ## 4. Finish in GitHub
 
-1. Back in **Settings → Pages**, enter your custom domain in the **Custom domain**
-   field and save (this writes/confirms the `CNAME` file for you too).
+1. Back in **Settings → Pages**, enter `cynthiatheresadoyle.com` in the **Custom
+   domain** field and save (this writes/confirms the `CNAME` file for you too).
 2. Wait for DNS to propagate (usually minutes, sometimes up to ~24 hours) — GitHub
    will show a green checkmark once it verifies the domain.
 3. Check **Enforce HTTPS** once it becomes available, so the site serves over
