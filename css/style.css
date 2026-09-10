@@ -1,0 +1,245 @@
+:root {
+  --bg: #faf7f2;
+  --bg-alt: #f1ebe1;
+  --ink: #2b2620;
+  --ink-soft: #5c5348;
+  --accent: #8c3b2e;
+  --border: #ddd2c0;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 32px 0 20px;
+}
+
+header.site-header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.site-title .surname {
+  color: var(--accent);
+}
+
+nav.site-nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+nav.site-nav a:first-child {
+  margin-left: 0;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+main {
+  padding: 56px 0 80px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin: 0 0 8px;
+}
+
+.hero .tagline {
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 28px;
+  font-size: 1.15rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin: 48px 0 24px;
+}
+
+.piece-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.piece-card {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.piece-card:last-child {
+  border-bottom: none;
+}
+
+.piece-card .piece-meta {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.piece-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+}
+
+.piece-card h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.piece-card h3 a:hover {
+  color: var(--accent);
+}
+
+.piece-card p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.read-more {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.piece-header {
+  margin-bottom: 32px;
+}
+
+.piece-header .piece-meta {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.piece-header h1 {
+  margin: 0 0 12px;
+}
+
+.piece-body p {
+  margin: 0 0 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 32px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.about-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 12px;
+}
+
+.contact-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 0;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.placeholder-note {
+  background: var(--bg-alt);
+  border: 1px dashed var(--border);
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 480px) {
+  header.site-header .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav.site-nav a {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
