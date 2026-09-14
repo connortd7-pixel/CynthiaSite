@@ -1,31 +1,28 @@
 # CynthiaSite
 
-A simple static creative-writing portfolio site (plain HTML/CSS, no build step),
-meant to be hosted on GitHub Pages with a custom domain from Namecheap.
+A simple static writing portfolio site (plain HTML/CSS, no build step) for Cynthia
+Theresa Doyle, showcasing journalism, social media campaign work, research writing,
+fiction, and poetry. Hosted on GitHub Pages with a custom domain from Namecheap.
 
 ## Structure
 
 ```
-index.html          Home page
+index.html          Home page (bio + featured writing)
 writing.html         Full list of writing, grouped by category
-about.html           Bio
-contact.html         Contact info / links
-writing/*.html       Individual pieces (short story, poem, essay placeholders)
+resume.html          Resume (education, volunteer work, leadership, skills)
+contact.html         Contact info
+writing/*.html       Individual pieces (newswire, social campaign, research
+                     paper, flash fiction, poetry)
+assets/*.png         Figures used in the research paper
 css/style.css        Shared stylesheet
 CNAME                Custom domain for GitHub Pages
 ```
 
-Everything marked `[PLACEHOLDER: ...]` in the HTML should be replaced with real
-content: name, bio, actual writing pieces, email, and social links.
+## Adding more writing
 
-## 1. Replace the placeholder content
-
-- Swap "Cynthia Theresa Doyle" for the real name throughout (`index.html`, `writing.html`,
-  `about.html`, `contact.html`, and each file in `writing/`), or leave it if that's
-  correct.
-- Replace each `[PLACEHOLDER: ...]` block with real text.
-- Add more pieces by copying one of the files in `writing/`, editing it, and adding
-  a link to it from `writing.html` (and optionally `index.html` if it's featured).
+Copy one of the files in `writing/`, edit its content, then add a link to it from
+`writing.html` (in the relevant category) and optionally from `index.html` if it
+should be featured.
 
 ## 2. Turn on GitHub Pages
 
