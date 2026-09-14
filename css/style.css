@@ -232,6 +232,164 @@ footer.site-footer {
   margin-bottom: 32px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.piece-byline {
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: -4px 0 24px;
+  font-size: 0.95rem;
+}
+
+.piece-body h2 {
+  font-size: 1.25rem;
+  margin: 36px 0 16px;
+}
+
+.piece-body ul,
+.piece-body ol {
+  margin: 0 0 20px;
+  padding-left: 24px;
+}
+
+.piece-body li {
+  margin-bottom: 8px;
+}
+
+figure.piece-figure {
+  margin: 28px 0;
+  text-align: center;
+}
+
+figure.piece-figure img {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+figure.piece-figure figcaption {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.pull-quote {
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+  margin: 28px 0;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+}
+
+.pull-quote cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.poem-stanza {
+  margin: 0 0 20px;
+}
+
+.poem-stanza .stanza-number {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.campaign-meta {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px 20px;
+}
+
+.campaign-meta li {
+  margin-bottom: 8px;
+}
+
+.campaign-meta li:last-child {
+  margin-bottom: 0;
+}
+
+.slide-block {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.slide-block:last-child {
+  border-bottom: none;
+}
+
+.slide-block h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.slide-block .slide-headline {
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.slide-block .slide-subtext {
+  margin: 0 0 6px;
+  color: var(--ink-soft);
+}
+
+.slide-block .slide-visual {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0;
+}
+
+.hashtags {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.resume-section {
+  margin-bottom: 40px;
+}
+
+.resume-section h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin: 0 0 20px;
+}
+
+.resume-entry {
+  margin-bottom: 16px;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry .entry-title {
+  font-weight: 600;
+}
+
+.resume-entry .entry-meta {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
 @media (max-width: 480px) {
   header.site-header .wrap {
     flex-direction: column;
